@@ -18,4 +18,3 @@ EXPOSE 5000
 
 # Comando para ejecutar la aplicación (ajusta según el framework usado)
 CMD ["python", "/app/currency_converter.py"]
-

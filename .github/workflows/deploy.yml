@@ -28,6 +28,7 @@ jobs:
     - name: Create GKE cluster
       run: |
         gcloud config set project $PROJECT_ID 
+        gcloud container clusters create python-appgke-cluster --zone us-central1-a --num-nodes 2
         gcloud container clusters get-credentials python-appgke-cluster --zone us-central1-a --project $PROJECT_ID 
 
     - name: Configure Docker
